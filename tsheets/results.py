@@ -9,6 +9,8 @@ class Results(object):
         self.repo = repo
         self.model = repo.model
         self.name = class_to_endpoint(self.model.__name__) + ('' if is_singleton else 's')
+        if isinstance(self.repo, repos.TimesheetsDeleted):
+            self.name = 'timesheets_deleted'
         self.index = -1
         self.loaded = []
         self.bridge = bridge
