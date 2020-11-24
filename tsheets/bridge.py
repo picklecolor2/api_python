@@ -40,7 +40,7 @@ class Bridge(object):
                         s_dict[key] = list(value.values())
                 has_more = data.get('more', None)
                 result = {"items": self.items_from_data(data, name, is_singleton, mode),
-                          "has_more": (has_more == 'true'),
+                          "has_more": (has_more == True),
                           "supplemental": s_dict}
                 return result
         else:
