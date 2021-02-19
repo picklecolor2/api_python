@@ -22,7 +22,7 @@ setup(
     keywords=['api', 'rest', 'tsheets'],
     install_requires=[
         'requests>=2.7.0',
-        'python-dateutil==2.4.2',
-        'pytz==2015.7'
+        'python-dateutil>=2.4.2',
+        'pytz>=2015.7'
     ]
 )
